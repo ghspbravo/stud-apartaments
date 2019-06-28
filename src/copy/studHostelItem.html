@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>flat</title>
+  <link rel="stylesheet" href="/reset.css">
+  <link rel="stylesheet" href="/bootstrap-grid.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+</head>
+
+<body>
+
+  <section
+    style="background: linear-gradient(179.16deg, #FFFFFF 1.21%, rgba(255, 255, 255, 0) 47.85%, #FFFFFF 98.55%), linear-gradient(0deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.94)), url(apart-bg.jpg); background-position: top center;"
+    class="pt-3">
+
+    <div class="container">
+      <div class="mb-md-4 mb-2 text-center">
+        <h2>Общежитие</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-2 mb-md-0">
+          <div class="mb-2">
+            <p>Описание квартиры в нескольких предложениях. Важная и дополнительная информация.</p>
+          </div>
+
+          <button class="link js-modal-open" data-modal="request">Оставить заявку</button>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row no-gutters mb-2 align-items-end justify-content-center justify-content-sm-start mb-2">
+            <img class="list-icon mr-2 not-responsive" src="/svg/custom-list-item-bot.svg" alt="">
+            <h3 class="mr-2">Адрес:</h3>
+            <span class="col-12 mt-1 mt-sm-0 text-center-xs col-sm">г. Екатеринбург, пр. Ленина, 56</span>
+          </div>
+
+          <div class="row no-gutters mb-2 align-items-end justify-content-center justify-content-sm-start mb-2">
+            <img class="list-icon mr-2 not-responsive" src="/svg/custom-list-item-left.svg" alt="">
+            <h3 class="mr-2">Количество мест в комнате:</h3>
+            <span class="col-12 mt-1 mt-sm-0 text-center-xs col-sm">2</span>
+          </div>
+
+          <div class="row no-gutters mb-2 align-items-end justify-content-center justify-content-sm-start mb-2">
+            <img class="list-icon mr-2 not-responsive" src="/svg/custom-list-item-top.svg" alt="">
+            <h3 class="mr-2">Этаж:</h3>
+            <span class="col-12 mt-1 mt-sm-0 text-center-xs col-sm">10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-2">
+
+      <div class="col-lg-8 mx-auto">
+        <div class="swiper-container gallery-main">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="https://picsum.photos/1000/600" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://picsum.photos/1000/600" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://picsum.photos/1000/600" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://picsum.photos/1000/600" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://picsum.photos/1000/600" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://picsum.photos/1000/600" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="px-sm-5">
+      <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/250/150" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/250/150" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/250/150" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/250/150" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/250/150" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/250/150" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="js-modal-request" class="modal">
+    <div class="modal__inner">
+      <div class="modal__close p-relative">
+        <img class="not-responsive" src="/svg/close.svg" alt="">
+        <button data-modal="request" class="js-modal-close link-expanded no-style"></button>
+      </div>
+      <form class="js-form-request">
+        <div class="mb-2">
+          <h3>Оставьте заявку</h3>
+        </div>
+
+        <div class="form-group mb-2">
+          <input class="w-100" placeholder="Ваши ФИО*" type="text">
+        </div>
+
+        <div class="form-group mb-2">
+          <input class="w-100" placeholder="Ваш номер телефона" type="text">
+        </div>
+
+        <div class="form-group mb-2">
+          <input class="w-100" placeholder="Место обучения" type="text">
+        </div>
+
+        <div class="form-group mb-2">
+          <textarea rows="10" class="w-100" placeholder="Жилищный вопрос*"></textarea>
+        </div>
+
+        <button>Отправить заявку</button>
+
+      </form>
+    </div>
+  </div>
+  <div id="js-modal-request-success" class="modal">
+      <div class="modal__inner">
+        <div class="modal__close p-relative">
+          <img class="not-responsive" src="/svg/close.svg" alt="">
+          <button data-modal="request-success" class="js-modal-close link-expanded no-style"></button>
+        </div>
+  
+        <div>
+          <div class="mb-2">
+            <h3>Заявка отправлена</h3>
+          </div>
+  
+          <p>В течении трех дней мы предоставим Вам ответ на Ваш запрос </p>
+  
+          <button data-modal="request-success" class="js-modal-close">Хорошо</button>
+  
+        </div>
+      </div>
+    </div>
+
+  <script src="/js/modalPagesScripts.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="/js/sliders.min.js"></script>
+</body>
+
+</html>

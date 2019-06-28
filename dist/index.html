@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<title>Студенческая недвижимость</title>
+	<link rel="stylesheet" href="/reset.css">
+	<link rel="stylesheet" href="/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css?v=0.2">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row align-items-center no-gutters">
+
+				<div class="d-md-none">
+					<button class="js-mobile-control-open mobile-nav-control-burger no-style">
+						<img src="/svg/burger.svg" alt="">
+					</button>
+					<button style="display: none;" class="js-mobile-control-close mobile-nav-control-close no-style">
+						<img src="/svg/close-white.svg" alt="">
+					</button>
+				</div>
+
+				<div class="header__logo p-relative mx-auto mx-md-0">
+					<img src="/svg/Logo.svg" alt="logo">
+					<a href="/" class="link-expanded no-style"></a>
+				</div>
+
+				<nav class="header__navigation mx-auto d-none d-md-block">
+					<div class="row no-gutters desktop-navigation">
+
+						<div class="desktop-navigation__item">
+							<button data-anchor="about" class="js-scrollTo js-scrollspy header-text no-style">О нас</button>
+						</div>
+
+						<div class="desktop-navigation__item">
+							<button data-classAnchor="services-spy" data-anchor="services"
+								class="js-scrollTo js-scrollspy header-text no-style">Услуги</button>
+						</div>
+
+						<div class="desktop-navigation__item">
+							<button data-classAnchor="pluses-spy" data-anchor="pluses"
+								class="js-scrollTo js-scrollspy header-text no-style">Подача заявки</button>
+						</div>
+
+						<div class="desktop-navigation__item">
+							<button data-anchor="reviews" class="js-scrollTo js-scrollspy header-text no-style">Отзывы</button>
+						</div>
+
+						<div class="desktop-navigation__item">
+							<button data-anchor="contacts" class="js-scrollTo js-scrollspy header-text no-style">Контакты</button>
+						</div>
+
+					</div>
+				</nav>
+
+				<div class="header__feedback d-none d-md-block">
+					<div class="row align-items-center no-gutters header-feedback">
+
+						<div class="header-feedback__icon d-none d-lg-block">
+							<img src="/svg/custom-list-item-top.svg" alt="">
+						</div>
+
+						<div class="header-feedback__content">
+							<div class="mb-1 header__telnumber">
+								<a class="no-style" href="tel:8(950)28-18-934">8 (950) 28-18-934</a>
+							</div>
+							<button data-modal="callback" class="header-text js-modal-open link">Обратная связь</button>
+						</div>
+
+						<div style="align-self: flex-start;" class="header__flag ml-1">
+							<img class="not-responsive" src="/svg/uk.svg" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="d-md-none header__flag ml-1">
+					<img class="not-responsive" src="/svg/uk.svg" alt="">
+				</div>
+
+
+			</div>
+		</div>
+	</header>
+
+	<section class="py-0 vh-100" id="banner">
+		<div style="background-image: url(./banner-bg.jpg)"
+			class="swiper-slide banner row no-gutters align-items-center justify-content-center">
+
+			<div class="swiper-container banner-slider banner__content text-center">
+				<h1>Помогаем студентам</h1>
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<h1>арендовать жильё</h1>
+					</div>
+					<div class="swiper-slide">
+						<h1>найти общежитие</h1>
+					</div>
+					<div class="swiper-slide">
+						<h1>купить квартиру</h1>
+					</div>
+				</div>
+
+				<div class="mt-3 text-center">
+					<button class="js-scrollTo" data-anchor="services">Начать поиск</button>
+				</div>
+
+			</div>
+		</div>
+
+		</div>
+
+		<div class="banner__scrolldown">
+			<!-- <img src="/svg/scrolldown.svg" alt="scrolldown"> -->
+			<svg style="overflow: visible;" width="38" height="33" viewBox="0 0 38 33" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path id="scroll-cube-path" fill-rule="evenodd" clip-rule="evenodd"
+					d="M19.0001 0.674297L8.83726 10.837L19.0001 20.9999L29.1628 10.837L26.9322 8.60638L25.0086 6.68278L19.0001 0.674297Z"
+					fill="white" fill-opacity="0.3" />
+				<!-- #scroll-arrow-path in banner.scss -->
+				<path id="scroll-arrow-path" fill-rule="evenodd" clip-rule="evenodd"
+					d="M3.84505 10.9068L0 14.6253L8.1953 22.5508L10.8018 25.0716L18.9999 32.9998L38 14.6253L34.1551 10.9069L19.0001 25.5631L3.84505 10.9068Z"
+					fill="white" fill-opacity="0.65" />
+			</svg>
+
+		</div>
+		</div>
+		</div>
+	</section>
+
+	<div id="about">
+		<section>
+			<div class="container">
+				<div class="text-center mb-2">
+					<h2>О нас</h2>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-7 col-md-6 col-sm-10">
+						<div class="mb-1">
+							<p>Мы оказываем помощь в поиске коммерческого жилья, помогаем найти недвижимость студентам любых вузов.
+								Описание
+								в несколько строк. Краткое описание в несколько строк. Краткое описание в несколько строк. </p>
+							<p>Мы оказываем помощь в поиске коммерческого жилья.</p>
+							<p>Описание в несколько строк. Краткое описание в несколько строк. Краткое описание в несколько строк.</p>
+						</div>
+
+						<img src="https://picsum.photos/600/300" alt="">
+					</div>
+
+					<div class="col-lg-5 col-md-6 col-3 pb-5 d-none d-md-block">
+						<img class="not-responsive img-full" src="https://picsum.photos/500" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="dark" id="advantages">
+			<div class="container">
+				<div class="text-center mb-2">
+					<h2>Преимущества</h2>
+				</div>
+
+				<div class="advantages row">
+					<div class="advantages-item advantage col-xl-5 col-md-6 col-sm-8 col-10 mx-auto mb-md-4">
+
+						<div class="advantage__icon text-center mb-2">
+							<img class="not-responsive" src="/svg/advantages-reliability.svg" alt="">
+						</div>
+
+						<div class="advantage__title mb-2">
+							<h3>Надёжность</h3>
+						</div>
+
+						<p class="opacity-90 text-small">Работая с нами Вы можете быть уверены, что мы найдем лучшее и наиболее
+							оригинальное решение именно для
+							Вас
+						</p>
+
+					</div>
+
+					<div class="advantages-item advantage offset-xl-1 offset-0 col-md-6 col-sm-8 col-10 mx-auto col-xl-5 mb-md-4">
+
+						<div class="advantage__icon text-center mb-2">
+							<img class="not-responsive" src="/svg/advantages-experience.svg" alt="">
+						</div>
+
+						<div class="advantage__title mb-2">
+							<h3>Опыт</h3>
+						</div>
+
+						<p class="opacity-90 text-small">Мы используем опыт нашей профессиональной команды при разработке каждого
+							заказа</p>
+
+					</div>
+
+					<div class="advantages-item advantage col-xl-5 col-md-6 col-sm-8 col-10 mx-auto mb-3 mb-xl-0">
+
+						<div class="advantage__icon text-center mb-2">
+							<img class="not-responsive" src="/svg/advantages-speed.svg" alt="">
+						</div>
+
+						<div class="advantage__title mb-2">
+							<h3>Скорость</h3>
+						</div>
+
+						<p class="opacity-90 text-small">Мы стараемся не терять времени даром, но при этом не торопимся в ущерб
+							результату. Вы успеете ко всем
+							дедлайнам</p>
+
+					</div>
+
+					<div class="advantages-item advantage offset-xl-1 offset-0 col-xl-5 col-md-6 col-sm-8 col-10 mx-auto">
+
+						<div class="advantage__icon text-center mb-2">
+							<img class="not-responsive" src="/svg/advantages-team.svg" alt="">
+						</div>
+
+						<div class="advantage__title mb-2">
+							<h3>Команда профессионалов</h3>
+						</div>
+
+						<p class="opacity-90 text-small">Наша команда состоит из профессионалов самого высокого уровня во всех
+							областях. Над Вашим проектом
+							работают
+							лучшие</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="d-none d-md-block" id="advantages-decoration">
+				<img src="/svg/advantages-decoration.svg" alt="">
+			</div>
+		</section>
+	</div>
+
+	<section class="services-spy pb-0" id="services">
+		<div id="services-controls"
+			style="background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 56.25%, #FFFFFF 100%), linear-gradient(105.3deg, rgba(40, 70, 149, 0.1) 4.36%, rgba(23, 109, 183, 0.1) 14.78%, rgba(0, 160, 227, 0.1) 26.99%, rgba(131, 207, 244, 0.1) 40.38%); background-position: center">
+			<div class="container">
+				<div class="text-center mb-2">
+					<h2>Услуги</h2>
+				</div>
+
+				<div class="text-center mb-2">
+					<p>Мы поможем Вам на всех этапах, учтем все пожелания</p>
+				</div>
+
+				<div class="services swiper-container services-thumb">
+					<div class="custom-swiper-wrapper row">
+
+						<div class="col-md-4 mb-md-0 mb-2 services-item swiper-slide">
+
+							<div data-anchor="services-content" class="service js-scrollTo">
+								<div class="service__inner">
+									<div class="service__title mb-1">
+										<h3>Снять жильё</h3>
+									</div>
+
+									<p class="text-small opacity-90">У нас большой выбор квартир, хостелов, отелей для тех, кто хочет
+										начать
+										самостоятельную жизнь!</p>
+								</div>
+
+								<div class="service__footer text-center">
+									Аренда
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-md-4 mb-md-0 mb-2 services-item swiper-slide">
+
+							<div data-anchor="services-content" class="service js-scrollTo">
+								<div class="service__inner">
+									<div class="service__title mb-1">
+										<h3>Заселиться в общежитие</h3>
+									</div>
+
+									<p class="text-small opacity-90">Не заселили в университетское общежитие, но хочешь сполна познать
+										студенческую
+										жизнь?
+										Заселяйся в частные общежития!</p>
+								</div>
+
+								<div class="service__footer text-center">
+									Коммерческие общежития
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-md-4 mb-md-0 mb-2 services-item swiper-slide">
+
+							<div data-anchor="services-content" class="service js-scrollTo">
+								<div class="service__inner">
+									<div class="service__title mb-1">
+										<h3>Купить квартиру</h3>
+									</div>
+
+									<p class="text-small opacity-90">У нас большой выбор квартир, хостелов, отелей для тех, кто хочет
+										начать
+										самостоятельную жизнь!</p>
+								</div>
+
+								<div class="service__footer text-center">
+									Покупка квартиры
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<div id="services-content" class="services-spy swiper-container services-content">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<section
+					style="background: linear-gradient(179.16deg, #FFFFFF 1.21%, rgba(255, 255, 255, 0) 47.85%, #FFFFFF 98.55%), linear-gradient(0deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.94)), url(apart-bg.jpg); background-position: top center;">
+					<div class="container w-unset">
+						<div>
+							<div class="text-center mb-3">
+								<h2>Аренда</h2>
+							</div>
+
+							<div class="list-order">
+
+								<div class="list-order-item mb-md-4 mb-2">
+									<div class="row">
+
+										<div class="col-lg-4 col-md-5 list-order-item__content">
+											<div class="mb-1">
+												<h3>Квартиры</h3>
+											</div>
+											<div class="mb-2">
+												<p>Большая база для съема квартир посуточно, квартир на время учебы, комнат...</p>
+											</div>
+											<div class="row align-items-center mb-2 mb-md-0">
+												<div class="col-xl-6 col-md-12 col-6 mb-md-2 mb-0 mb-xl-0">
+													<button class="js-modal-open" data-modal="page" data-page="flatRent">Показать все</button>
+												</div>
+												<div class="col-xl-6 col-md-12 col-6">
+													<button data-modal="request" class="js-modal-open link ml-auto ml-md-0 d-block">Оставить
+														заявку</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-8 col-md-7 list-order-item__photo">
+											<img src="https://picsum.photos/800/400" alt="">
+											<button data-modal="page" data-page="flatRent"
+												class="js-modal-open no-style link-expanded"></button>
+										</div>
+									</div>
+								</div>
+
+								<div class="list-order-item mb-md-4 mb-2">
+									<div class="row">
+
+										<div class="col-lg-4 col-md-5 list-order-item__content">
+											<div class="mb-1">
+												<h3>Хостелы</h3>
+											</div>
+											<div class="mb-2">
+												<p>Отличный вариант для тех, кто ищет место, чтобы переночевать в городе. Большая база для
+													съема
+													квартир посуточно...</p>
+											</div>
+											<div class="row align-items-center mb-2 mb-md-0">
+												<div class="col-xl-6 col-md-12 col-6 mb-md-2 mb-0 mb-xl-0">
+													<button class="js-modal-open" data-modal="page" data-page="hostelRent">Показать все</button>
+												</div>
+												<div class="col-xl-6 col-md-12 col-6">
+													<button data-modal="request" class="js-modal-open link ml-auto ml-md-0 d-block">Оставить
+														заявку</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-8 col-md-7 list-order-item__photo">
+											<img src="https://picsum.photos/800/400" alt="">
+											<button data-modal="page" data-page="hostelRent"
+												class="js-modal-open no-style link-expanded"></button>
+										</div>
+									</div>
+								</div>
+
+								<div class="list-order-item mb-md-4 mb-2">
+									<div class="row">
+
+										<div class="col-lg-4 col-md-5 list-order-item__content">
+											<div class="mb-1">
+												<h3>Отели</h3>
+											</div>
+											<div class="mb-2">
+												<p>Максимально комфортные условия... Большая база для съема квартир посуточно...</p>
+											</div>
+											<div class="row align-items-center mb-2 mb-md-0">
+												<div class="col-xl-6 col-md-12 col-6 mb-md-2 mb-0 mb-xl-0">
+													<button class="js-modal-open" data-modal="page" data-page="hotelRent">Показать все</button>
+												</div>
+												<div class="col-xl-6 col-md-12 col-6">
+													<button data-modal="request" class="js-modal-open link ml-auto ml-md-0 d-block">Оставить
+														заявку</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-8 col-md-7 list-order-item__photo">
+											<img src="https://picsum.photos/800/400" alt="">
+											<button data-modal="page" data-page="hotelRent"
+												class="js-modal-open no-style link-expanded"></button>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="dark" id="steps"
+					style="background: linear-gradient(115.75deg, rgba(0, 160, 227, 0.13) 5.32%, rgba(20, 115, 188, 0.13) 17.89%, rgba(0, 160, 227, 0.13) 39.2%, rgba(40, 70, 149, 0.13) 94.38%), linear-gradient(0deg, rgba(35, 38, 43, 0.9), rgba(35, 38, 43, 0.9)), url(/steps-bg.jpg); background-size: cover; background-position: center;">
+					<div class="container">
+						<div class="text-center mb-5">
+							<h2>Как мы работаем</h2>
+						</div>
+
+						<div class="row">
+
+							<div class="step-1 col-lg-4 col-md-6 col-10 pl-sm-5 pl-2 pl-md-0 mb-3">
+								<div class="step">
+									<div class="step__title h2 mb-1">
+										Шаг <span class="h1">01</span>
+									</div>
+
+									<div class="step__content pl-md-4 pl-2">
+										<div class="mb-1">
+											<b>Подача заявки</b>
+										</div>
+
+										<p class="text-small steps-text">
+											Вы оставляете заявку, заполнив специальную форму
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="step-3 col-lg-4 col-md-6 col-10 pl-sm-5 pl-2 pl-md-0 offset-0 offset-lg-2 mb-3">
+								<div class="step">
+									<div class="step__title h2 mb-1">
+										Шаг <span class="h1">03</span>
+									</div>
+
+									<div class="step__content pl-md-4 pl-2">
+										<div class="mb-1">
+											<b>Поиск вариантов</b>
+										</div>
+
+										<p class="text-small steps-text">
+											Мы ищем наиболее подходящие варианты специлаьно для Вас
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="step-2 col-lg-4 col-md-6 col-10 pl-sm-5 pl-2 pl-md-0 offset-0 offset-lg-3 mb-3 mb-lg-0">
+								<div class="step">
+									<div class="step__title h2 mb-1">
+										Шаг <span class="h1">02</span>
+									</div>
+
+									<div class="step__content pl-md-4 pl-2">
+										<div class="mb-1">
+											<b>Звонок</b>
+										</div>
+
+										<p class="text-small steps-text">
+											Наш менеджер перезвонит Вам для уточнения деталей
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="step-4 col-lg-4 col-md-6 col-10 pl-sm-5 pl-2 pl-md-0 offset-0 offset-lg-1">
+								<div class="step">
+									<div class="step__title h2 mb-1">
+										Шаг <span class="h1">04</span>
+									</div>
+
+									<div class="step__content pl-md-4 pl-2">
+										<div class="mb-1">
+											<b>Получение результатов</b>
+										</div>
+
+										<p class="text-small steps-text">
+											Вы получите несколько вариантов уже через ден
+										</p>
+
+										<div class="row no-gutters align-items-center">
+											<div class="mr-1">
+												<img class="document-icon not-responsive" src="/svg/document.svg" alt="">
+											</div>
+
+											<a class="steps-text text-small" href="#">Скачать документы</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="swiper-slide">
+				<section
+					style="background: linear-gradient(179.16deg, #FFFFFF 1.21%, rgba(255, 255, 255, 0) 47.85%, #FFFFFF 98.55%), linear-gradient(0deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.94)), url(apart-bg.jpg); background-position: top center;">
+					<div class="container w-unset">
+						<div>
+							<div class="text-center mb-3">
+								<h2>Коммерческие общежития</h2>
+							</div>
+
+							<div class="list-order">
+
+								<div class="list-order-item mb-md-4 mb-2">
+									<div class="row">
+
+										<div class="col-lg-4 col-md-5 list-order-item__content">
+											<div class="mb-1">
+												<h3>Общежитие</h3>
+											</div>
+											<div class="mb-2">
+												<p>Большая база для съема квартир посуточно, квартир на время учебы, комнат...</p>
+											</div>
+											<div class="row">
+												<div class="col-xl-6 col-md-12 col-6 mb-2">
+													<button data-modal="page" data-page="studHostelItem" class="js-modal-open button">Узнать
+														больше</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-8 col-md-7 list-order-item__photo">
+											<img src="https://picsum.photos/800/400" alt="">
+											<button data-modal="page" data-page="studHostelItem"
+												class="js-modal-open no-style link-expanded"></button>
+										</div>
+									</div>
+								</div>
+
+								<div class="list-order-item mb-md-4 mb-2">
+									<div class="row">
+
+										<div class="col-lg-4 col-md-5 list-order-item__content">
+											<div class="mb-1">
+												<h3>Другое общежитие</h3>
+											</div>
+											<div class="mb-2">
+												<p>Отличный вариант для тех, кто ищет место, чтобы переночевать в городе. Большая база для
+													съема
+													квартир посуточно...</p>
+											</div>
+											<div class="row">
+												<div class="col-xl-6 col-md-12 col-6 mb-2">
+													<button data-modal="page" data-page="studHostelItem" class="js-modal-open">Узнать
+														больше</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-8 col-md-7 list-order-item__photo">
+											<img src="https://picsum.photos/800/400" alt="">
+											<button data-modal="page" data-page="studHostelItem"
+												class="js-modal-open no-style link-expanded"></button>
+										</div>
+									</div>
+								</div>
+
+								<div class="list-order-item mb-md-4 mb-2">
+									<div class="row">
+
+										<div class="col-lg-4 col-md-5 list-order-item__content">
+											<div class="mb-1">
+												<h3>Еще одно общежитие</h3>
+											</div>
+											<div class="mb-2">
+												<p>Максимально комфортные условия... Большая база для съема квартир посуточно...</p>
+											</div>
+											<div class="row">
+												<div class="col-xl-6 col-md-12 col-6 mb-2">
+													<button data-modal="page" data-page="studHostelItem" class="js-modal-open">Узнать
+														больше</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-8 col-md-7 list-order-item__photo">
+											<img src="https://picsum.photos/800/400" alt="">
+											<button data-modal="page" data-page="studHostelItem"
+												class="js-modal-open no-style link-expanded"></button>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="dark" id="steps"
+					style="background: linear-gradient(115.75deg, rgba(0, 160, 227, 0.13) 5.32%, rgba(20, 115, 188, 0.13) 17.89%, rgba(0, 160, 227, 0.13) 39.2%, rgba(40, 70, 149, 0.13) 94.38%), linear-gradient(0deg, rgba(35, 38, 43, 0.9), rgba(35, 38, 43, 0.9)), url(/steps-bg.jpg); background-size: cover; background-position: center;">
+					<div class="container">
+						<div class="text-center mb-5">
+							<h2>Как мы работаем
+								<br>(Коммерческие общежития)
+							</h2>
+						</div>
+
+						<div class="row">
+
+							<div class="step-1 col-lg-4 col-md-6 col-10 pl-sm-5 pl-2 pl-md-0 mb-3">
+								<div class="step">
+									<div class="step__title h2 mb-1">
+										Шаг <span class="h1">01</span>
+									</div>
+
+									<div class="step__content pl-md-4 pl-2">
+										<div class="mb-1">
+											<b>Подача заявки</b>
+										</div>
+
+										<p class="text-small steps-text">
+											Вы оставляете заявку, заполнив специальную форму
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="step-3 col-lg-4 col-md-6 col-10 pl-sm-5 pl-2 pl-md-0 offset-0 offset-lg-2 mb-3">
+								<div class="step">
+									<div class="step__title h2 mb-1">
+										Шаг <span class="h1">03</span>
+									</div>
+
+									<div class="step__content pl-md-4 pl-2">
+										<div class="mb-1">
+											<b>Поиск вариантов</b>
+										</div>
+
+										<p class="text-small steps-text">
+											Мы ищем наиболее подходящие варианты специлаьно для Вас
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="step-2 col-lg-4 col-md-6 col-10 pl-sm-5 pl-2 pl-md-0 offset-0 offset-lg-3 mb-3 mb-lg-0">
+								<div class="step">
+									<div class="step__title h2 mb-1">
+										Шаг <span class="h1">02</span>
+									</div>
+
+									<div class="step__content pl-md-4 pl-2">
+										<div class="mb-1">
+											<b>Звонок</b>
+										</div>
+
+										<p class="text-small steps-text">
+											Наш менеджер перезвонит Вам для уточнения деталей
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="step-4 col-lg-4 col-md-6 col-10 pl-sm-5 pl-2 pl-md-0 offset-0 offset-lg-1">
+								<div class="step">
+									<div class="step__title h2 mb-1">
+										Шаг <span class="h1">04</span>
+									</div>
+
+									<div class="step__content pl-md-4 pl-2">
+										<div class="mb-1">
+											<b>Получение результатов</b>
+										</div>
+
+										<p class="text-small steps-text">
+											Вы получите несколько вариантов уже через ден
+										</p>
+
+										<div class="row no-gutters align-items-center">
+											<div class="mr-1">
+												<img class="document-icon not-responsive" src="/svg/document.svg" alt="">
+											</div>
+
+											<a class="steps-text text-small" href="#">Скачать документы</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="swiper-slide">
+				<section
+					style="background: linear-gradient(179.16deg, #FFFFFF 1.21%, rgba(255, 255, 255, 0) 47.85%, #FFFFFF 98.55%), linear-gradient(0deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.94)), url(apart-bg.jpg); background-position: top center;">
+					<div class="container w-unset">
+						<div>
+							<div class="text-center mb-3">
+								<h2>Покупка квартиры</h2>
+							</div>
+
+							<div class="mb-3 text-center">
+								<p>На сайте представлены не все имеющиеся квартиры, мы подберем для Вас все индивидуально</p>
+							</div>
+
+							<div class="list-order">
+
+								<div class="list-order-item mb-md-4 mb-2">
+									<div class="row">
+
+										<div class="col-lg-4 col-md-5 list-order-item__content">
+											<div class="mb-1">
+												<h3>Квартира</h3>
+											</div>
+											<div class="mb-2">
+												<p>Большая база для съема квартир посуточно, квартир на время учебы, комнат...</p>
+											</div>
+											<div class="row">
+												<div class="col-xl-6 col-md-12 col-6 mb-2">
+													<button data-modal="page" data-page="flatItem" class="js-modal-open">Узнать больше</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-8 col-md-7 list-order-item__photo">
+											<img src="https://picsum.photos/800/400" alt="">
+											<button data-modal="page" data-page="flatItem"
+												class="js-modal-open no-style link-expanded"></button>
+										</div>
+									</div>
+								</div>
+
+								<div class="list-order-item mb-md-4 mb-2">
+									<div class="row">
+
+										<div class="col-lg-4 col-md-5 list-order-item__content">
+											<div class="mb-1">
+												<h3>Другая квартира</h3>
+											</div>
+											<div class="mb-2">
+												<p>Отличный вариант для тех, кто ищет место, чтобы переночевать в городе. Большая база для
+													съема
+													квартир посуточно...</p>
+											</div>
+											<div class="row">
+												<div class="col-xl-6 col-md-12 col-6 mb-2">
+													<button data-modal="page" data-page="flatItem" class="js-modal-open">Узнать больше</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-8 col-md-7 list-order-item__photo">
+											<img src="https://picsum.photos/800/400" alt="">
+											<button data-modal="page" data-page="flatItem"
+												class="js-modal-open no-style link-expanded"></button>
+										</div>
+									</div>
+								</div>
+
+								<div class="list-order-item mb-md-4 mb-2">
+									<div class="row">
+
+										<div class="col-lg-4 col-md-5 list-order-item__content">
+											<div class="mb-1">
+												<h3>Еще одна квартира</h3>
+											</div>
+											<div class="mb-2">
+												<p>Максимально комфортные условия... Большая база для съема квартир посуточно...</p>
+											</div>
+											<div class="row">
+												<div class="col-xl-6 col-md-12 col-6 mb-2">
+													<button data-modal="page" data-page="flatItem" class="js-modal-open">Узнать больше</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-8 col-md-7 list-order-item__photo">
+											<img src="https://picsum.photos/800/400" alt="">
+											<button data-modal="page" data-page="flatItem"
+												class="js-modal-open no-style link-expanded"></button>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="dark" id="steps"
+					style="background: linear-gradient(115.75deg, rgba(0, 160, 227, 0.13) 5.32%, rgba(20, 115, 188, 0.13) 17.89%, rgba(0, 160, 227, 0.13) 39.2%, rgba(40, 70, 149, 0.13) 94.38%), linear-gradient(0deg, rgba(35, 38, 43, 0.9), rgba(35, 38, 43, 0.9)), url(/steps-bg.jpg); background-size: cover; background-position: center;">
+					<div class="container">
+						<div class="text-center mb-5">
+							<h2>Как мы работаем
+								<br>(покупка квартиры)
+							</h2>
+						</div>
+
+						<div class="row">
+
+							<div class="step-1 col-lg-4 col-md-6 col-10 pl-sm-5 pl-2 pl-md-0 mb-3">
+								<div class="step">
+									<div class="step__title h2 mb-1">
+										Шаг <span class="h1">01</span>
+									</div>
+
+									<div class="step__content pl-md-4 pl-2">
+										<div class="mb-1">
+											<b>Подача заявки</b>
+										</div>
+
+										<p class="text-small steps-text">
+											Вы оставляете заявку, заполнив специальную форму
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="step-3 col-lg-4 col-md-6 col-10 pl-sm-5 pl-2 pl-md-0 offset-0 offset-lg-2 mb-3">
+								<div class="step">
+									<div class="step__title h2 mb-1">
+										Шаг <span class="h1">03</span>
+									</div>
+
+									<div class="step__content pl-md-4 pl-2">
+										<div class="mb-1">
+											<b>Поиск вариантов</b>
+										</div>
+
+										<p class="text-small steps-text">
+											Мы ищем наиболее подходящие варианты специлаьно для Вас
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="step-2 col-lg-4 col-md-6 col-10 pl-sm-5 pl-2 pl-md-0 offset-0 offset-lg-3 mb-3 mb-lg-0">
+								<div class="step">
+									<div class="step__title h2 mb-1">
+										Шаг <span class="h1">02</span>
+									</div>
+
+									<div class="step__content pl-md-4 pl-2">
+										<div class="mb-1">
+											<b>Звонок</b>
+										</div>
+
+										<p class="text-small steps-text">
+											Наш менеджер перезвонит Вам для уточнения деталей
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="step-4 col-lg-4 col-md-6 col-10 pl-sm-5 pl-2 pl-md-0 offset-0 offset-lg-1">
+								<div class="step">
+									<div class="step__title h2 mb-1">
+										Шаг <span class="h1">04</span>
+									</div>
+
+									<div class="step__content pl-md-4 pl-2">
+										<div class="mb-1">
+											<b>Получение результатов</b>
+										</div>
+
+										<p class="text-small steps-text">
+											Вы получите несколько вариантов уже через ден
+										</p>
+
+										<div class="row no-gutters align-items-center">
+											<div class="mr-1">
+												<img class="document-icon not-responsive" src="/svg/document.svg" alt="">
+											</div>
+
+											<a class="steps-text text-small" href="#">Скачать документы</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<section class="pt-0 services-spy" id="gallery">
+		<div class="container mb-2">
+			<div class="text-center mb-2">
+				<h2>Как мы работаем или другие видео</h2>
+			</div>
+
+			<div class="col-lg-8 mx-auto">
+				<div class="swiper-container gallery-main">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="https://picsum.photos/1000/600" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="https://picsum.photos/1000/600" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="https://picsum.photos/1000/600" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="https://picsum.photos/1000/600" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="https://picsum.photos/1000/600" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="https://picsum.photos/1000/600" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="px-sm-5">
+			<div class="swiper-container gallery-thumbs">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="https://picsum.photos/250/150" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://picsum.photos/250/150" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://picsum.photos/250/150" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://picsum.photos/250/150" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://picsum.photos/250/150" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://picsum.photos/250/150" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="pluses" class="pluses-spy pt-0">
+		<div class="d-none d-md-block text-center mb-2">
+			<h2>Что вы получите?</h2>
+		</div>
+
+		<div class="pluses">
+			<div class="container p-relative">
+
+				<div class="pluses__form">
+					<form class="js-form-request feedback-card">
+						<div class="mb-2">
+							<h3>Оставьте заявку</h3>
+						</div>
+
+						<div class="form-group mb-1">
+							<input class="w-100" placeholder="Ваши ФИО*" type="text" />
+						</div>
+
+						<div class="form-group mb-1">
+							<input class="w-100" placeholder="Ваш номер телефона*" type="tel" />
+						</div>
+
+						<div class="form-group mb-1">
+							<input class="w-100" placeholder="Место обучения" type="text" />
+						</div>
+
+						<div class="form-group mb-1">
+							<textarea class="w-100" rows="10" placeholder="Жилищный вопрос*" type="text"></textarea>
+						</div>
+
+						<div class="mt-2">
+							<button class="button_expanded">Отправить заявку</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="d-md-none text-center mb-2">
+				<h2>Что вы получите?</h2>
+			</div>
+
+			<div class="pluses-item row no-gutters align-items-center"
+				style="background: linear-gradient(0deg, rgba(35, 38, 43, 0.35), rgba(35, 38, 43, 0.35)), url(/pluses-1.png), #C4C4C4">
+				<div class="container">
+					<div class="col-md-5 col-xl-8 px-0">
+						<div class="row align-items-center no-gutters">
+							<img class="list-icon mr-1 not-responsive" src="/svg/lead-list-item.svg" alt="">
+							<h3 class="col">Жильё рядом с университетом</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="pluses-item row no-gutters align-items-center"
+				style="background: linear-gradient(0deg, rgba(35, 38, 43, 0.35), rgba(35, 38, 43, 0.35)), url(/pluses-2.png), #C4C4C4">
+				<div class="container">
+					<div class="col-md-5 col-xl-8 px-0">
+						<div class="row align-items-center no-gutters">
+							<img class="list-icon mr-1 not-responsive" src="/svg/lead-list-item.svg" alt="">
+							<h3 class="col">Хороших соседей</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="pluses-item row no-gutters align-items-center"
+				style="background: linear-gradient(0deg, rgba(35, 38, 43, 0.35), rgba(35, 38, 43, 0.35)), url(/pluses-3.png), #C4C4C4">
+				<div class="container">
+					<div class="col-md-5 col-xl-8 px-0">
+						<div class="row align-items-center no-gutters">
+							<img class="list-icon mr-1 not-responsive" src="/svg/lead-list-item.svg" alt="">
+							<h3 class="col">Квалифицированную помощь специалистов</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="pluses-item row no-gutters align-items-center"
+				style="background: linear-gradient(0deg, rgba(35, 38, 43, 0.35), rgba(35, 38, 43, 0.35)), url(/pluses-4.png), #C4C4C4">
+				<div class="container">
+					<div class="col-md-5 col-xl-8 px-0">
+						<div class="row align-items-center no-gutters">
+							<img class="list-icon mr-1 not-responsive" src="/svg/lead-list-item.svg" alt="">
+							<h3 class="col">Быстрый подбор нескольких вариантов</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="pluses-spy pt-0" id="team">
+		<div class="container">
+			<div class="mb-2 text-center">
+				<h2>Наша команда</h2>
+			</div>
+
+			<div class="mb-2 text-center">
+				<p>Мы - молодая команда. Каждый студент может присоедениться к нам </p>
+			</div>
+		</div>
+
+		<div class="px-xl-5">
+			<div class="swiper-container gallery-bullets">
+				<div class="swiper-wrapper">
+
+					<div class="swiper-slide team-member">
+						<img class="team-member__photo not-responsive" src="https://picsum.photos/350/440" alt="team member">
+
+						<div class="team-member__content">
+							<div class="row no-gutters mb-1">
+								<img class="list-icon mt-1 mr-1 not-responsive" src="/svg/list-item.svg" alt="">
+								<div class="col">
+									<h3>Александрова Александра</h3>
+								</div>
+							</div>
+							<p class="text-small opacity-90">
+								Менеджер по работе со студентами и что-то еще
+							</p>
+						</div>
+					</div>
+
+					<div class="swiper-slide team-member">
+						<img class="team-member__photo not-responsive" src="https://picsum.photos/350/440" alt="team member">
+						<div class="team-member__content">
+							<div class="row no-gutters mb-1">
+								<img class="list-icon mt-1 mr-1 not-responsive" src="/svg/list-item.svg" alt="">
+								<div class="col">
+									<h3>Иванов Николай </h3>
+								</div>
+							</div>
+							<p class="text-small opacity-90">
+								Организатор работы со студентами
+							</p>
+						</div>
+					</div>
+
+					<div class="swiper-slide team-member">
+						<img class="team-member__photo not-responsive" src="https://picsum.photos/350/440" alt="team member">
+						<div class="team-member__content">
+							<div class="row no-gutters mb-1">
+								<img class="list-icon mt-1 mr-1 not-responsive" src="/svg/list-item.svg" alt="">
+								<div class="col">
+									<h3>Ведерникова Ирина </h3>
+								</div>
+							</div>
+							<p class="text-small opacity-90">
+								Директор контроля качества
+							</p>
+						</div>
+					</div>
+
+					<div class="swiper-slide team-member">
+						<img class="team-member__photo not-responsive" src="https://picsum.photos/350/440" alt="team member">
+						<div class="team-member__content">
+							<div class="row no-gutters mb-1">
+								<img class="list-icon mt-1 mr-1 not-responsive" src="/svg/list-item.svg" alt="">
+								<div class="col">
+									<h3>Александрова Александра</h3>
+								</div>
+							</div>
+							<p class="text-small opacity-90">
+								Менеджер по работе со студентами и что-то еще
+							</p>
+						</div>
+					</div>
+
+					<div class="swiper-slide team-member">
+						<img class="team-member__photo not-responsive" src="https://picsum.photos/350/440" alt="team member">
+						<div class="team-member__content">
+							<div class="row no-gutters mb-1">
+								<img class="list-icon mt-1 mr-1 not-responsive" src="/svg/list-item.svg" alt="">
+								<div class="col">
+									<h3>Иванов Николай</h3>
+								</div>
+							</div>
+							<p class="text-small opacity-90">
+								Организатор работы со студентами
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="pluses-spy dark p-relative" id="partners">
+		<div class="container">
+			<div class="mb-2 text-center">
+				<h2>Нам доверяют</h2>
+			</div>
+
+			<div class="mb-2 text-center col-lg-9 mx-auto">
+				<p>Мы помогаем найти недвижимость студентам любых вузов.. Краткое описание в несколько строк. Краткое описание в
+					несколько строк.
+				</p>
+			</div>
+
+			<div class="row">
+
+				<div class="col-lg-5 col-md-6 mb-2">
+					<img class="img-full not-responsive" src="https://picsum.photos/500/150" alt="">
+				</div>
+
+				<div class="col-lg-4 col-md-6 mb-2">
+					<img class="img-full not-responsive" src="https://picsum.photos/500/150" alt="">
+				</div>
+
+				<div class="col-lg-3 col-md-6 mb-2">
+					<img class="img-full not-responsive" src="https://picsum.photos/500/150" alt="">
+				</div>
+
+				<div class="col-lg-3 col-md-6 mb-2">
+					<img class="img-full not-responsive" src="https://picsum.photos/500/150" alt="">
+				</div>
+
+				<div class="col-lg-4 col-md-6 mb-2">
+					<img class="img-full not-responsive" src="https://picsum.photos/500/150" alt="">
+				</div>
+
+				<div class="col-lg-5 col-md-6 mb-2">
+					<img class="img-full not-responsive" src="https://picsum.photos/500/150" alt="">
+				</div>
+
+			</div>
+		</div>
+
+		<div id="partners-decoration-1">
+			<img src="/svg/decoration-1.svg" alt="">
+		</div>
+		<div id="partners-decoration-2">
+			<img src="/svg/decoration-2.svg" alt="">
+		</div>
+	</section>
+
+	<section id="reviews">
+		<div class="container">
+			<div class="text-center mb-2">
+				<h2>Отзывы наших клиентов</h2>
+			</div>
+
+			<div class="mb-2 text-center">
+				<p>Мы - молодая команда. Каждый может <button data-modal="review" class="link js-modal-open">оставить про нас
+						отзыв</button></p>
+			</div>
+		</div>
+
+		<div class="px-lg-5">
+			<div class="swiper-container gallery-bullets gallery-bullets-reviews">
+				<div class="swiper-wrapper">
+
+					<div class="swiper-slide review-item"
+						style="background: linear-gradient(0deg, rgba(35, 38, 43, 0.85), rgba(35, 38, 43, 0.85)), url(https://picsum.photos/350); background-size: cover;">
+
+						<div class="row no-gutters flex-column h-100">
+							<div class="row no-gutters mb-2 review-item__header">
+								<img class="list-icon mr-1 not-responsive mt-1" src="/svg/list-item.svg" alt="">
+								<div class="col">
+									<div class="mb-1">
+										<h3>Михайлова Анастасия </h3>
+									</div>
+									<span class="opacity-50 text-xsmall">13 апреля, 2019</span>
+								</div>
+								<div class="ml-auto col">
+									<img class="not-responsive review-item__photo pl-1" src="https://picsum.photos/350/440" alt="">
+								</div>
+							</div>
+
+							<img class="not-responsive review-item__photo review-item__left-side-show ml-auto"
+								src="https://picsum.photos/350/440" alt="">
+
+							<div class="review-item__right-side-show mb-2">
+								<div class="mb-1">
+									<h3>Михайлова Анастасия </h3>
+								</div>
+								<span class="opacity-50 text-xsmall">13 апреля, 2019</span>
+							</div>
+
+							<div class="review-item__text mb-1">
+								<p class="opacity-90">Ваш сайт очень помог. Нашла жильё быстрее, чем думала. Огромное спасибо! Вы
+									молодцы! Нашла жильё
+									быстрее, чем думала. Огромное спасибо! Вы молодцы.</p>
+							</div>
+
+							<div class="mt-auto review-item__link">
+								<a class="text-xsmall opacity-90" href="#">Клиент в vk.com</a>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="swiper-slide review-item"
+						style="background: linear-gradient(0deg, rgba(35, 38, 43, 0.85), rgba(35, 38, 43, 0.85)), url(https://picsum.photos/350); background-size: cover;">
+
+						<div class="row no-gutters flex-column h-100">
+							<div class="row no-gutters mb-2 review-item__header">
+								<img class="list-icon mr-1 not-responsive mt-1" src="/svg/list-item.svg" alt="">
+								<div class="col">
+									<div class="mb-1">
+										<h3>Михайлова Анастасия </h3>
+									</div>
+									<span class="opacity-50 text-xsmall">13 апреля, 2019</span>
+								</div>
+								<div class="ml-auto col">
+									<img class="not-responsive review-item__photo pl-1" src="https://picsum.photos/350/440" alt="">
+								</div>
+							</div>
+
+							<img class="not-responsive review-item__photo review-item__left-side-show ml-auto"
+								src="https://picsum.photos/350/440" alt="">
+
+							<div class="review-item__right-side-show mb-2">
+								<div class="mb-1">
+									<h3>Михайлова Анастасия </h3>
+								</div>
+								<span class="opacity-50 text-xsmall">13 апреля, 2019</span>
+							</div>
+
+							<div class="review-item__text mb-1">
+								<p class="opacity-90">Ваш сайт очень помог. Нашла жильё быстрее, чем думала. Огромное спасибо! Вы
+									молодцы! Нашла жильё
+									быстрее, чем думала. Огромное спасибо! Вы молодцы.</p>
+							</div>
+
+							<div class="mt-auto review-item__link">
+								<a class="text-xsmall opacity-90" href="#">Клиент в vk.com</a>
+							</div>
+						</div>
+
+					</div>
+
+
+					<div class="swiper-slide review-item"
+						style="background: linear-gradient(0deg, rgba(35, 38, 43, 0.85), rgba(35, 38, 43, 0.85)), url(https://picsum.photos/350); background-size: cover;">
+
+						<div class="row no-gutters flex-column h-100">
+							<div class="row no-gutters mb-2 review-item__header">
+								<img class="list-icon mr-1 not-responsive mt-1" src="/svg/list-item.svg" alt="">
+								<div class="col">
+									<div class="mb-1">
+										<h3>Михайлова Анастасия </h3>
+									</div>
+									<span class="opacity-50 text-xsmall">13 апреля, 2019</span>
+								</div>
+								<div class="ml-auto col">
+									<img class="not-responsive review-item__photo pl-1" src="https://picsum.photos/350/440" alt="">
+								</div>
+							</div>
+
+							<img class="not-responsive review-item__photo review-item__left-side-show ml-auto"
+								src="https://picsum.photos/350/440" alt="">
+
+							<div class="review-item__right-side-show mb-2">
+								<div class="mb-1">
+									<h3>Михайлова Анастасия </h3>
+								</div>
+								<span class="opacity-50 text-xsmall">13 апреля, 2019</span>
+							</div>
+
+							<div class="review-item__text mb-1">
+								<p class="opacity-90">Ваш сайт очень помог. Нашла жильё быстрее, чем думала. Огромное спасибо! Вы
+									молодцы! Нашла жильё
+									быстрее, чем думала. Огромное спасибо! Вы молодцы.</p>
+							</div>
+
+							<div class="mt-auto review-item__link">
+								<a class="text-xsmall opacity-90" href="#">Клиент в vk.com</a>
+							</div>
+						</div>
+
+					</div>
+
+
+					<div class="swiper-slide review-item"
+						style="background: linear-gradient(0deg, rgba(35, 38, 43, 0.85), rgba(35, 38, 43, 0.85)), url(https://picsum.photos/350); background-size: cover;">
+
+						<div class="row no-gutters flex-column h-100">
+							<div class="row no-gutters mb-2 review-item__header">
+								<img class="list-icon mr-1 not-responsive mt-1" src="/svg/list-item.svg" alt="">
+								<div class="col">
+									<div class="mb-1">
+										<h3>Михайлова Анастасия </h3>
+									</div>
+									<span class="opacity-50 text-xsmall">13 апреля, 2019</span>
+								</div>
+								<div class="ml-auto col">
+									<img class="not-responsive review-item__photo pl-1" src="https://picsum.photos/350/440" alt="">
+								</div>
+							</div>
+
+							<img class="not-responsive review-item__photo review-item__left-side-show ml-auto"
+								src="https://picsum.photos/350/440" alt="">
+
+							<div class="review-item__right-side-show mb-2">
+								<div class="mb-1">
+									<h3>Михайлова Анастасия </h3>
+								</div>
+								<span class="opacity-50 text-xsmall">13 апреля, 2019</span>
+							</div>
+
+							<div class="review-item__text mb-1">
+								<p class="opacity-90">Ваш сайт очень помог. Нашла жильё быстрее, чем думала. Огромное спасибо! Вы
+									молодцы! Нашла жильё
+									быстрее, чем думала. Огромное спасибо! Вы молодцы.</p>
+							</div>
+
+							<div class="mt-auto review-item__link">
+								<a class="text-xsmall opacity-90" href="#">Клиент в vk.com</a>
+							</div>
+						</div>
+
+					</div>
+
+
+					<div class="swiper-slide review-item"
+						style="background: linear-gradient(0deg, rgba(35, 38, 43, 0.85), rgba(35, 38, 43, 0.85)), url(https://picsum.photos/350); background-size: cover;">
+
+						<div class="row no-gutters flex-column h-100">
+							<div class="row no-gutters mb-2 review-item__header">
+								<img class="list-icon mr-1 not-responsive mt-1" src="/svg/list-item.svg" alt="">
+								<div class="col">
+									<div class="mb-1">
+										<h3>Михайлова Анастасия </h3>
+									</div>
+									<span class="opacity-50 text-xsmall">13 апреля, 2019</span>
+								</div>
+								<div class="ml-auto col">
+									<img class="not-responsive review-item__photo pl-1" src="https://picsum.photos/350/440" alt="">
+								</div>
+							</div>
+
+							<img class="not-responsive review-item__photo review-item__left-side-show ml-auto"
+								src="https://picsum.photos/350/440" alt="">
+
+							<div class="review-item__right-side-show mb-2">
+								<div class="mb-1">
+									<h3>Михайлова Анастасия </h3>
+								</div>
+								<span class="opacity-50 text-xsmall">13 апреля, 2019</span>
+							</div>
+
+							<div class="review-item__text mb-1">
+								<p class="opacity-90">Ваш сайт очень помог. Нашла жильё быстрее, чем думала. Огромное спасибо! Вы
+									молодцы! Нашла жильё
+									быстрее, чем думала. Огромное спасибо! Вы молодцы.</p>
+							</div>
+
+							<div class="mt-auto review-item__link">
+								<a class="text-xsmall opacity-90" href="#">Клиент в vk.com</a>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="dark" id="contacts" style="background-image: url(/contacts-bg.jpg); background-size: cover;">
+		<div class="container">
+			<div class="mb-2 text-center">
+				<h2>Контакты</h2>
+			</div>
+
+			<div class="mt-lg-4 mt-5">
+				<div class="col-lg-6 px-0 pt-2 pt-sm-4 pt-lg-0">
+					<div class="contacts-card">
+
+						<div class="row no-gutters mb-2 align-items-center justify-content-center justify-content-sm-start mb-2">
+							<img class="list-icon mr-2 not-responsive" src="/svg/custom-list-item-bot.svg" alt="">
+							<h3 class="mr-2">Адрес:</h3>
+							<span class="col-12 col-sm">г. Екатеринбург, пр. Ленина, 56</span>
+						</div>
+
+						<div class="row no-gutters mb-2 align-items-center justify-content-center justify-content-sm-start mb-2">
+							<img class="list-icon mr-2 not-responsive" src="/svg/custom-list-item-left.svg" alt="">
+							<h3 class="mr-2">Email:</h3>
+							<span class="col-12 col-sm">info@gmail.com</span>
+						</div>
+
+						<div class="row no-gutters mb-2 align-items-center justify-content-center justify-content-sm-start mb-2">
+							<img class="list-icon mr-2 not-responsive" src="/svg/custom-list-item-top.svg" alt="">
+							<h3 class="mr-2">Телефон:</h3>
+							<span class="col-12 col-sm">8 (950) 28-18-934</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="footer__controls mb-2 mb-sm-0">
+					<button data-modal="request" class="js-modal-open link footer-text">Отправить заявку</button>
+				</div>
+
+				<div class="footer__controls mb-2 mb-sm-0 ml-md-4 ml-sm-2 ml-0">
+					<button data-modal="member" class="js-modal-open link footer-text">Стать членом команды</button>
+				</div>
+
+				<div class="socials mr-sm-0 mx-auto">
+					<div class="row align-items-center no-gutters">
+						<div class="socials-item p-relative mr-2">
+							<svg width="10" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M9.473 11.46H6.667v12.413H2.5V11.459H0V7.64h2.5V5.338C2.502 1.988 3.716 0 7.16 0H10v3.82H8.094c-1.34 0-1.427.573-1.427 1.645v2.174H10l-.527 3.82z"
+									fill="#fff" fill-opacity=".75" /></svg>
+							<a href="#" class="link-expanded no-style"></a>
+						</div>
+						<div class="socials-item p-relative mr-2">
+							<svg width="26" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M13.705 17.315c.855 0 .855-1.386.855-1.924 0-.962.854-1.924 1.708-1.924.855 0 2.32 1.65 3.418 2.886.854.962.854.962 1.709.962h2.563s1.709-.073 1.709-1.924c0-.6-.586-1.62-2.564-3.848-1.708-1.923-2.585-.93 0-4.81 1.575-2.362 2.72-4.502 2.524-5.12-.188-.59-4.567-1.528-5.087-.651-1.708 2.886-2.022 3.593-2.563 4.81-.854 1.924-.939 2.886-1.709 2.886-.776 0-.854-1.868-.854-2.886 0-3.18.41-5.43-.854-5.772h-2.564c-1.375 0-2.563.962-2.563.962s-1.06.931-.854.962c.255.038 1.709-.398 1.709.962V4.81s.007 3.848-.855 3.848c-.854 0-2.563-3.848-4.272-6.734C4.491.792 4.307.962 3.453.962c-.916 0-1.708.04-2.563.04-.855 0-.964.613-.855.922 1.709 4.81 2.937 7.83 6.183 11.636 2.978 3.49 4.967 3.676 6.633 3.755.427.02 0 0 .854 0z"
+									fill="#fff" fill-opacity=".75" /></svg>
+							<a href="#" class="link-expanded no-style"></a>
+						</div>
+						<div class="socials-item p-relative mr-2">
+							<svg width="22" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M11.166 5.479c-2.746 0-5.021 2.236-5.021 5.021a5.006 5.006 0 0 0 5.021 5.021c2.786 0 5.022-2.275 5.022-5.021s-2.275-5.021-5.022-5.021zm0 8.238A3.232 3.232 0 0 1 7.95 10.5a3.232 3.232 0 0 1 3.217-3.217 3.232 3.232 0 0 1 3.217 3.217 3.231 3.231 0 0 1-3.217 3.217zM16.642 6.392a1.37 1.37 0 1 0 0-2.74 1.37 1.37 0 0 0 0 2.74z"
+									fill="#fff" fill-opacity=".75" />
+								<path
+									d="M19.973 1.736C18.873.593 17.306 0 15.527 0H6.806C3.122 0 .666 2.456.666 6.14v8.679c0 1.82.593 3.387 1.779 4.53C3.588 20.449 5.112 21 6.848 21h8.637c1.82 0 3.345-.593 4.446-1.651 1.143-1.101 1.735-2.668 1.735-4.488V6.139c0-1.778-.592-3.302-1.693-4.403zm-.17 13.125c0 1.312-.465 2.37-1.227 3.09-.762.72-1.82 1.101-3.09 1.101H6.847c-1.27 0-2.329-.38-3.09-1.1-.763-.763-1.144-1.821-1.144-3.134V6.14c0-1.27.381-2.329 1.143-3.09.72-.72 1.82-1.101 3.091-1.101h8.722c1.27 0 2.328.38 3.09 1.143.72.762 1.144 1.82 1.144 3.048v8.722z"
+									fill="#fff" fill-opacity=".75" /></svg>
+							<a href="#" class="link-expanded no-style"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div id="js-modal-page" class="modal modal_page">
+		<div class="modal__inner">
+			<div class="modal__close p-relative">
+				<img class="not-responsive" src="/svg/close.svg" alt="">
+				<button data-modal="page" class="js-modal-close link-expanded no-style"></button>
+			</div>
+			<iframe id="page-frame" src="" width="100%" height="100%" frameborder="1"></iframe>
+		</div>
+	</div>
+
+	<div id="js-mobile-navigation" class="mobile-nav mobile-menu d-md-none">
+		<div class="mobile-menu__inner">
+			<nav class="text-center">
+				<div class="mb-2">
+					<button data-anchor="about" class="no-style text-small js-scrollTo js-scrollspy js-mobile-control-close">О
+						нас</button>
+				</div>
+				<div class="mb-2">
+					<button data-classAnchor="services-spy" data-anchor="services"
+						class="js-scrollTo js-scrollspy js-mobile-control-close no-style text-small">Услуги</button>
+				</div>
+				<div class="mb-2">
+					<button data-classAnchor="pluses-spy" data-anchor="pluses"
+						class="js-scrollTo js-scrollspy js-mobile-control-close no-style text-small">Подача заявки</button>
+				</div>
+				<div class="mb-2">
+					<button data-anchor="reviews"
+						class="js-scrollTo js-scrollspy js-mobile-control-close no-style text-small">Отзывы</button>
+				</div>
+				<div class="mb-2">
+					<button data-anchor="contacts"
+						class="js-scrollTo js-scrollspy js-mobile-control-close no-style text-small">Контакты</button>
+				</div>
+			</nav>
+
+			<div class="mb-2 text-center">
+				<img class="list-icon not-responsive" src="/svg/custom-list-item-top.svg" alt="">
+			</div>
+
+
+			<div class="text-center">
+				<div class="mb-1 header__telnumber">
+					<a class="no-style" href="tel:8(950)28-18-934">8 (950) 28-18-934</a>
+				</div>
+				<button data-modal="callback" class="js-modal-open text-small link js-mobile-control-close">Обратная
+					связь</button>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="js-modal-callback" class="modal">
+		<div class="modal__inner">
+			<div class="modal__close p-relative">
+				<img class="not-responsive" src="/svg/close.svg" alt="">
+				<button data-modal="callback" class="js-modal-close link-expanded no-style"></button>
+			</div>
+			<form class="js-form-callback">
+				<div class="mb-2">
+					<h3>Обратная связь</h3>
+				</div>
+
+				<div class="form-group mb-3">
+					<input class="w-100" placeholder="Ваш номер телефона" type="text">
+				</div>
+
+				<button>Жду звонка</button>
+
+			</form>
+		</div>
+	</div>
+	<div id="js-modal-callback-success" class="modal">
+		<div class="modal__inner">
+			<div class="modal__close p-relative">
+				<img class="not-responsive" src="/svg/close.svg" alt="">
+				<button data-modal="callback-success" class="js-modal-close link-expanded no-style"></button>
+			</div>
+
+			<div>
+				<div class="mb-2">
+					<h3>Мы перезвоним Вам</h3>
+				</div>
+
+				<p>Мы перезвоним Вам в течение 30 минут на указанный номер</p>
+
+				<button data-modal="callback-success" class="js-modal-close">Хорошо</button>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="js-modal-request" class="modal">
+		<div class="modal__inner">
+			<div class="modal__close p-relative">
+				<img class="not-responsive" src="/svg/close.svg" alt="">
+				<button data-modal="request" class="js-modal-close link-expanded no-style"></button>
+			</div>
+			<form class="js-form-request">
+				<div class="mb-2">
+					<h3>Оставьте заявку</h3>
+				</div>
+
+				<div class="form-group mb-2">
+					<input class="w-100" placeholder="Ваши ФИО*" type="text">
+				</div>
+
+				<div class="form-group mb-2">
+					<input class="w-100" placeholder="Ваш номер телефона" type="text">
+				</div>
+
+				<div class="form-group mb-2">
+					<input class="w-100" placeholder="Место обучения" type="text">
+				</div>
+
+				<div class="form-group mb-2">
+					<textarea rows="10" class="w-100" placeholder="Жилищный вопрос*"></textarea>
+				</div>
+
+				<button>Отправить заявку</button>
+
+			</form>
+		</div>
+	</div>
+	<div id="js-modal-request-success" class="modal">
+		<div class="modal__inner">
+			<div class="modal__close p-relative">
+				<img class="not-responsive" src="/svg/close.svg" alt="">
+				<button data-modal="request-success" class="js-modal-close link-expanded no-style"></button>
+			</div>
+
+			<div>
+				<div class="mb-2">
+					<h3>Заявка отправлена</h3>
+				</div>
+
+				<p>В течении трех дней мы предоставим Вам ответ на Ваш запрос </p>
+
+				<button data-modal="request-success" class="js-modal-close">Хорошо</button>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="js-modal-member" class="modal">
+		<div class="modal__inner">
+			<div class="modal__close p-relative">
+				<img class="not-responsive" src="/svg/close.svg" alt="">
+				<button data-modal="member" class="js-modal-close link-expanded no-style"></button>
+			</div>
+			<form class="js-form-member">
+				<div class="mb-2">
+					<h3>Оставьте заявку</h3>
+				</div>
+
+				<div class="form-group mb-2">
+					<input class="w-100" placeholder="Ваши ФИО*" type="text">
+				</div>
+
+				<div class="form-group mb-2">
+					<input class="w-100" placeholder="Ваш номер телефона" type="text">
+				</div>
+
+				<button>Отправить заявку</button>
+
+			</form>
+		</div>
+	</div>
+	<div id="js-modal-member-success" class="modal">
+		<div class="modal__inner">
+			<div class="modal__close p-relative">
+				<img class="not-responsive" src="/svg/close.svg" alt="">
+				<button data-modal="member-success" class="js-modal-close link-expanded no-style"></button>
+			</div>
+
+			<div>
+				<div class="mb-2">
+					<h3>Заявка отправлена</h3>
+				</div>
+
+				<p>Спасибо за заявку. Мы свяжемся с Вами для уточнения деталей в ближайшее время.</p>
+
+				<button data-modal="member-success" class="js-modal-close">Хорошо</button>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="js-modal-review" class="modal">
+		<div class="modal__inner">
+			<div class="modal__close p-relative">
+				<img class="not-responsive" src="/svg/close.svg" alt="">
+				<button data-modal="review" class="js-modal-close link-expanded no-style"></button>
+			</div>
+			<form class="js-form-review">
+				<div class="mb-2">
+					<h3>Оставьте заявку</h3>
+				</div>
+
+				<div class="form-group mb-2">
+					<input class="w-100" placeholder="Ваши ФИО*" type="text">
+				</div>
+
+				<div class="form-group mb-2">
+					<input class="w-100" placeholder="Ссылка на Вашу страницу VK" type="text">
+				</div>
+
+				<div class="form-group mb-2">
+					<textarea class="w-100" placeholder="Ваш отзыв" rows="10"></textarea>
+				</div>
+
+				<button>Отправить заявку</button>
+
+			</form>
+		</div>
+	</div>
+	<div id="js-modal-review-success" class="modal">
+		<div class="modal__inner">
+			<div class="modal__close p-relative">
+				<img class="not-responsive" src="/svg/close.svg" alt="">
+				<button data-modal="review-success" class="js-modal-close link-expanded no-style"></button>
+			</div>
+
+			<div>
+				<div class="mb-2">
+					<h3>Отзыв отправлен</h3>
+				</div>
+
+				<p>Спасибо за Ваш отзыв. Ваш отзыв появится на сайте после модерации.</p>
+
+				<button data-modal="review-success" class="js-modal-close">Хорошо</button>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="js-services-tabs" class="services-tabs">
+		<div class="container h-100">
+			<div class="swiper-container h-100 services-thumb-2">
+				<div class="swiper-wrapper">
+
+					<div id="tabs-rent" data-anchor="services-content"
+						class="js-scrollTo swiper-slide active col-lg-4 col-sm-6 col-8">
+						<span>Аренда</span>
+					</div>
+
+					<div id="tabs-studentHostel" data-anchor="services-content"
+						class="js-scrollTo swiper-slide col-lg-4 col-sm-6 col-8">
+						<span>Коммерческие общежития</span>
+					</div>
+
+					<div id="tabs-flat" data-anchor="services-content" class="js-scrollTo swiper-slide col-lg-4 col-sm-6 col-8">
+						<span>Покупка квартиры</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="/js/sliders.min.js?v=2.0"></script>
+	<script src="/js/scripts.min.js?v=2.0"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+</body>
+
+</html>

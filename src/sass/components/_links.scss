@@ -1,0 +1,44 @@
+@import './vars';
+/* LINKS */
+
+a,
+.link {
+  position: relative;
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  transition: color $tr-standart;
+
+  &.no-style {
+    display: block;
+    color: inherit;
+  }
+
+  &.disabled {
+    color: $c-disabled;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+a:not(.no-style):not(.button),
+.link {
+  border-bottom: 1px dashed $c-blue-light;
+
+  &:hover,
+  &:focus {
+    transition: color $tr-standart;
+    color: $c-blue-light;
+    outline: none;
+  }
+
+  &.disabled {
+
+    &:focus,
+    &:hover {
+      cursor: not-allowed;
+      background: white;
+      color: $c-disabled;
+    }
+  }
+}

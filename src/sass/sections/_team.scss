@@ -1,0 +1,39 @@
+.team-member {
+  position: relative;
+  padding: 20px 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  &__photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    // position: absolute;
+    position: relative;
+    z-index: 2;
+
+    margin-top: auto;
+    padding: 15px 20px;
+    color: white;
+
+    // bottom: 20px;
+    // left: 10px;
+    // width: 84%;
+
+    background: linear-gradient(115.94deg, rgba(0, 160, 227, 0.08) -17.74%, rgba(20, 115, 188, 0.08) -5.55%, rgba(0, 160, 227, 0.08) 15.12%, rgba(40, 70, 149, 0.08) 68.66%), rgba(35, 38, 43, 0.95);
+  }
+}
+
+.swiper-last-visible-slide:not(.swiper-slide-active),
+.swiper-first-visible-slide:not(.swiper-slide-active) {
+  .team-member__content {
+    visibility: hidden;
+  }
+}

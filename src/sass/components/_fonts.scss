@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald:400,700&display=swap');
+@import './vars';
+
+h1, .h1, h2, .h2, h3, .h3 {
+  font-family: $ff-lead;
+  letter-spacing: 0.05em;
+}
+
+h1, .h1 {
+  font-size: $fz-h1;
+
+  @media (max-width: $m-sm-max) {
+   font-size: 26px; 
+  }
+}
+
+h2, .h2 {
+  font-size: $fz-h2;
+
+  @media (max-width: $m-sm-max) {
+   font-size: 23px; 
+  }
+}
+
+h3, .h3 {
+  font-size: $fz-h3;
+
+  @media (max-width: $m-sm-max) {
+   font-size: 19px; 
+  }
+}
+
+p {
+  margin-bottom: 1em;
+}

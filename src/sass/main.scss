@@ -1,0 +1,170 @@
+// GENERAL
+@import './components/spacing';
+@import './components/fonts';
+@import './components/vars';
+@import './components/links';
+@import './components/buttons';
+@import './components/utils';
+@import './components/section';
+
+// ELEMENTS
+@import './components/header';
+@import './components/footer';
+@import './components/list';
+@import './components/icons';
+@import './components/gallery';
+@import './components/forms';
+@import './components/socials';
+@import './components/modals';
+@import './components/tabs';
+
+// SECTIONS
+@import './sections/banner';
+@import './sections/advantages';
+@import './sections/services';
+@import './sections/steps';
+@import './sections/pluses';
+@import './sections/team';
+@import './sections/partners';
+@import './sections/reviews';
+@import './sections/contacts';
+@import './sections/mobileMenu';
+
+body {
+  position: relative;
+  font-family: $ff-main;
+  font-size: $fz-main;
+  font-weight: normal;
+  line-height: 1.3;
+  color: rgba(35, 38, 43, 0.9);
+  overflow-x: hidden;
+  // overflow-y: scroll;
+
+  @media (max-width: $m-sm-max) {
+    font-size: 15px;
+  }
+
+  &.no-scroll {
+    overflow: hidden !important;
+  }
+}
+
+img:not(.not-responsive) {
+  width: 100%;
+  height: auto;
+}
+
+// SELECTION
+
+::selection {
+  -webkit-font-smoothing: antialiased;
+  color: black;
+  text-shadow: none;
+  background: $c-blue-light;
+}
+
+// SCROLLBAR
+
+// body {
+//   scrollbar-base-color: slategray;
+//   scrollbar-3dlight-color: transparent;
+//   scrollbar-highlight-color: transparent;
+//   scrollbar-track-color: #ECF0F1;
+//   scrollbar-arrow-color: slategray;
+//   scrollbar-shadow-color: transparent;
+// }
+
+// ::-webkit-scrollbar {
+//   width: 10px;
+//   height: 10px;
+// }
+
+// ::-webkit-scrollbar-button {
+//   display: none;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   background-color: $c-blue;
+//   border-radius: 2px;
+// }
+
+// ::-webkit-scrollbar-track {
+//   background-color: gray;
+// }
+
+
+// FORMS
+
+fieldset {
+  padding: 1.5em 2.5em 3em;
+}
+
+legend {
+  padding: 0 15px;
+}
+
+label {
+  cursor: pointer;
+}
+
+.input,
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=password],
+input[type=search],
+input[type=number],
+textarea {
+  padding: 5px 0 0 15px;
+  border: none;
+  color: rgba(35, 38, 43, 0.4);
+  background-color: rgba(131, 207, 244, 0.25);
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: auto;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: black;
+  }
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+.form-error {
+  font-size: 14px;
+  color: red;
+}
+
+textarea {
+  padding-top: 10px;
+	resize: none;
+}
+
+
+// crunch
+
+.page-control-close {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+}
+
+.page-control-back {
+  position: absolute;
+  top: 25px;
+  left: 35px;
+}
+
+.custom-swiper-wrapper {
+  transform: none !important;
+}
+
+.js-scrollTo {
+  cursor: pointer;
+}

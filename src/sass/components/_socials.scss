@@ -1,0 +1,8 @@
+@import './vars';
+
+.socials-item:hover {
+  svg path {
+    transition: fill $tr-standart;
+    fill: $c-blue-light;
+  }
+}

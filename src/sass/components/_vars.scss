@@ -1,0 +1,37 @@
+/* GLOBAL VARS */
+
+/* fonts */
+$ff-main: 'Open Sans', sans-serif;
+$ff-lead: 'Oswald', sans-serif;
+
+/* font sizes */
+$fz-h1: 50px;
+$fz-h2: 37px;
+$fz-h3: 24px;
+
+$fz-small: 16px;
+$fz-xsmall: 12px;
+
+$fz-main: 18px;
+
+/* brand colors */
+$c-gray-dark:#23262B;
+$c-blue: #00B1EB;
+$c-blue-light: #83CFF4;
+$linear-1: linear-gradient(#284695 9.9%, #176DB7 35.94%, #00A0E3 66.5%, #83CFF4 100%);
+$linear-2: linear-gradient(to right #00A0E3 0%, #1473BC 14.12%, #00A0E3 38.04%, #284695 100%);
+
+$c-disabled: #acacac;
+
+/* responsive breakpoints */
+$m-xs-max: 575px; 	/* mobile */
+$m-sm-min: 576px;
+$m-sm-max: 767px;
+$m-md-min: 768px;	/* tablet */ 
+$m-md-max: 991px;
+$m-lg-min: 992px;	/* desktop */
+$m-lg-max: 1199px;
+$m-xl-min: 1200px;	/* wide */
+$m-xl-max: 1400px;	
+
+$tr-standart: 0.3s ease-in;

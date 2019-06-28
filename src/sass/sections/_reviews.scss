@@ -1,0 +1,58 @@
+@import '../components/vars';
+.review-item {
+  color: white;
+  padding: 30px;
+
+  &__photo {
+    width: 100px;
+    height: 90px;
+    object-fit: cover;
+  }
+
+  &__header {
+    h3 {
+      @media (max-width: $m-xl-max) {
+        font-size: 20px;
+      }
+      @media (max-width: $m-lg-max) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .review-item__right-side-show,
+  .review-item__left-side-show {
+    display: none;
+  }
+
+  &__text {
+    font-size: 16px;
+    max-height: 40%;
+    overflow-y: auto;
+
+    @media (max-width: $m-sm-max) {
+      max-height: 45%;      
+    }
+  }
+}
+
+.swiper-last-visible-slide:not(.swiper-slide-active),
+.swiper-first-visible-slide:not(.swiper-slide-active):not(.review-item__left-side-show) {
+  .review-item__header,
+  .review-item__text,
+  .review-item__link {
+    display: none;
+  }
+}
+
+.swiper-last-visible-slide:not(.swiper-slide-active) {
+  .review-item__right-side-show {
+    display: block;
+  }
+}
+
+.swiper-first-visible-slide:not(.swiper-slide-active):not(.review-item__left-side-show) {
+  .review-item__left-side-show {
+    display: block;
+  }
+}

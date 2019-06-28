@@ -1,0 +1,45 @@
+@import '../components/vars';
+
+.step {
+  &__title {
+    opacity: 0.12;
+    color: $c-blue-light;
+    transition: opacity 0.5s ease-in;
+
+    @media (max-width: $m-sm-max) {
+      opacity: 0.9;
+    }
+  }
+
+  &:hover &__title {
+    opacity: 0.9;
+  }
+}
+
+.steps-text {
+  opacity: 0.85;
+}
+
+.step-1 {
+  @media (max-width: $m-sm-max) {
+    order: 1;
+  }
+}
+
+.step-2 {
+  @media (max-width: $m-sm-max) {
+    order: 2;
+  }
+}
+
+.step-3 {
+  @media (max-width: $m-sm-max) {
+    order: 3;
+  }
+}
+
+.step-4 {
+  @media (max-width: $m-sm-max) {
+    order: 4;
+  }
+}

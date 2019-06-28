@@ -1,0 +1,20 @@
+@import './vars';
+
+footer {
+  background: $c-gray-dark;
+  padding: 43px 0;
+
+  color: white;
+}
+
+.footer-text {
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+.footer__controls {
+  @media (max-width: $m-xs-max) {
+    width: 100%;
+    text-align: center;
+  }
+}

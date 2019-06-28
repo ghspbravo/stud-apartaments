@@ -1,0 +1,76 @@
+@import '../components/vars';
+
+.services-content {
+  .row {
+    box-sizing: border-box !important;
+  }
+}
+
+.service {
+  cursor: pointer;
+  position: relative;
+  height: 100%;
+  padding: 35px 20px 65px;
+
+  @media (max-width: $m-md-max) {
+   padding: 20px 15px; 
+   padding-bottom: 65px;
+
+   max-height: 300px;
+  }
+
+  background: linear-gradient(0deg, rgba(35, 38, 43, 0.85), rgba(35, 38, 43, 0.85)), url("https://picsum.photos/350/250");
+  background-size: cover;
+
+  border: 5px solid white;
+  color: white;
+
+  &__inner {
+    padding-left: 28px;
+
+    max-height: 100%;
+    overflow-y: auto;
+  }
+
+  &__title {
+    position: relative;
+    &::before {
+      content: '';
+
+      position: absolute;
+      left: -28px;
+      top: 7px;
+
+      width: 18px;
+      height: 18px;
+
+      background: url('/svg/list-item.svg');
+      background-size: contain;
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+
+    @media (max-width: $m-md-max) {
+      font-size: 14px; 
+     }
+
+    padding: 15px 0;
+    background: linear-gradient(88.27deg, rgba(0, 160, 227, 0.8) -94.69%, rgba(20, 115, 188, 0.8) 136.59%, rgba(0, 160, 227, 0.8) 302.16%, rgba(40, 70, 149, 0.8) 409.92%), linear-gradient(0deg, rgba(35, 38, 43, 0.5), rgba(35, 38, 43, 0.5)), #FFFFFF;
+  }
+}
+
+.services-item.swiper-slide-thumb-active {
+  .service {
+    border: 5px solid $c-blue-light;
+  }
+}
+
+.services-tabs [id^=tabs-] {
+  cursor: pointer;
+}

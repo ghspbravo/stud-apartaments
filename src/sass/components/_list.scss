@@ -1,0 +1,14 @@
+@import './vars';
+
+.list-order-item {
+  &:nth-child(even) {
+    .list-order-item__photo {
+      order: 1;
+    }
+    .list-order-item__content {
+      @media (min-width: $m-md-min) {
+        order: 2;
+      }
+    }
+  }
+}

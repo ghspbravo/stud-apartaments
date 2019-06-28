@@ -1,0 +1,55 @@
+@import '../components/vars';
+
+.advantages {
+  &-item {
+    padding-left: 28px;
+  }
+}
+
+.advantage {
+
+  &__title {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+
+      left: -28px;
+      top: 5px;
+
+      width: 18px;
+      height: 18px;
+
+      background-size: contain;
+      background-image: url(/svg/lead-list-item.svg);
+    }
+  }
+
+  &__icon {
+    opacity: 0.12;
+
+    img {
+      object-fit: contain;
+      height: 110px;
+    }
+
+    transition: opacity 0.5s ease-in;
+
+    @media (max-width: $m-sm-max) {
+      opacity: 0.9;
+    }
+  }
+
+
+  &:hover &__icon {
+    opacity: 0.9;
+  }
+}
+
+#advantages-decoration {
+  position: absolute;
+
+  bottom: 10px;
+  left: 40px;
+}

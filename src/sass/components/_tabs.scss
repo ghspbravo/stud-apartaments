@@ -1,0 +1,46 @@
+@import './vars';
+.services-tabs {
+  position: fixed;
+  top: -120px;
+  visibility: hidden;
+  &.show {
+    visibility: visible;
+    transition: top $tr-standart;
+    top: 120px;
+    @media (max-width: $m-md-max) {
+      top: 95px;
+    }
+    @media (max-width: $m-sm-max) {
+      top: 55px;
+    }
+  }
+  left: 0;
+  width: 100%;
+  height: 60px;
+
+  background: linear-gradient(90.06deg, rgba(0, 160, 227, 0.8) 0%, rgba(20, 115, 188, 0.8) 26.71%, rgba(0, 160, 227, 0.8) 72.32%, rgba(40, 70, 149, 0.8) 100%), linear-gradient(0deg, rgba(35, 38, 43, 0.5), rgba(35, 38, 43, 0.5)), #FFFFFF;
+  z-index: 3;
+
+  color: white;
+
+  .swiper-slide {
+    span {
+      display: block;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    &.active {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '';
+        height: 5px;
+        width: 100%;
+        background-color: #fff;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}

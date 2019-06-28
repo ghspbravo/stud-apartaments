@@ -1,0 +1,36 @@
+@import '../components/vars';
+.contacts-card {
+  background-color: #fff;
+  padding: 50px;
+
+  color: black;
+
+  @media (max-width: $m-sm-max) {
+    padding: 15px;
+  }
+
+  @media (max-width: $m-xs-max) {
+    text-align: center;
+  }
+}
+
+#contacts {
+  height: 750px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: $m-xl-max) {
+    background-position: center;
+  }
+
+  @media (max-width: $m-md-max) {
+    height: 600px;
+  }
+
+  @media (max-width: $m-sm-max) {
+    height: 450px;
+  }
+
+  @media (max-width: $m-xs-max) {
+    background-position: 60% -80px;
+  }
+}
